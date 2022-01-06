@@ -1,6 +1,6 @@
 p{
-    @include breakpoints(medium){
-        color: red;
-    }
-    @include overlay(black,0.3)
+    color: $grayColor;
+    @include overlay($redColor,0.3);
+    @include prefixer(box-shadow, 10px 10px #ccc, webkit o);
 }
+

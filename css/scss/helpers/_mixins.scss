@@ -30,3 +30,12 @@
     left: 0;
     background-color: rgba($overlayColor, $opacity);
 }
+
+// Prefixer
+// use ==> @include prefixer (property, value, prefix prefix ...)
+@mixin prefixer($property, $value, $prefixes:()) {
+    @each $prefix in $prefixes{
+        #{"-" + $prefix + "-" + $property}: $value;
+    }
+    #{$property} : $value;
+}
