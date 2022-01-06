@@ -1,0 +1,6 @@
+p{
+    @include breakpoints(medium){
+        color: red;
+    }
+    @include overlay(black,0.3)
+}

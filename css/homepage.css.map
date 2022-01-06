@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,CAAC,CAAA;EFyBG,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,gBAAgB,EE1BC,kBAAK;CACzB;;AFGO,MAAM,EAAE,SAAS,EAAE,KAAK,OAAO,SAAS,EAAE,KAAK;EERvD,AAAA,CAAC,CAAA;IAEO,KAAK,EAAE,GAAG;GAGjB",
+    "sources": [
+        "homepage.scss",
+        "scss/helpers/_variables.scss",
+        "scss/helpers/_mixins.scss",
+        "scss/layout/_header.scss",
+        "scss/pages/_homepage.scss",
+        "scss/layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "homepage.css"
+}

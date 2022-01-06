@@ -1,0 +1,32 @@
+// media quiries
+// use ==> @include breakpoints(small or medium or large or xlarge){your properties}
+@mixin breakpoints ($screenSize){
+    @if $screenSize == small{
+        @media (max-width:767px){
+            @content;
+        }
+    }@else if $screenSize == medium{
+        @media (min-width:768px) and (max-width:991px){
+            @content;
+        }
+    }@else if $screenSize == large{
+        @media (min-width:992px) and (max-width:1200px){
+            @content;
+        }
+    }@else if $screenSize == xlarge{
+        @media (min-width:1201px){
+            @content;
+        }
+    }
+}
+
+// Overlay
+// use ==> @include overlay(color,opacity)
+@mixin overlay($overlayColor,$opacity){
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($overlayColor, $opacity);
+}
