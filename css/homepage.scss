@@ -1,5 +1,7 @@
 @import "scss/helpers/variables";
 @import "scss/helpers/mixins";
+@import "scss/layout/globalrules";
+@import "scss/layout/grid";
 
 @import "scss/layout/header";
 @import "scss/pages/homepage";

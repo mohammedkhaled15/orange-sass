@@ -1,6 +1,0 @@
-p{
-    color: $grayColor;
-    @include overlay($redColor,0.3);
-    @include prefixer(box-shadow, 10px 10px #ccc, webkit o);
-}
-
