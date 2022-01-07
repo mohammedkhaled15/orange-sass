@@ -1,0 +1,23 @@
+.section-header{
+    position: relative;
+    h2{
+        color: white;
+    background-color: $redColor;
+    padding: 10px 15px;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    &:before{
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: $grayColor;
+        top: 50%;
+        left: 0;
+        z-index: -1;
+    }
+    }
+}
