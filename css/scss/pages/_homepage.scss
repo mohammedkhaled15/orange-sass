@@ -114,3 +114,27 @@
     }
 }
 /*end ourplayers*/
+/*start lorem*/
+.lorem{
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    .content{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        gap: 20px;
+        .image{
+            img{
+                max-width: 100%;
+            }
+            @include prefixer(border-radius, 15px, webkit moz o);
+            position: relative;
+            overflow: hidden;
+            &:hover::after{
+                content: "";
+                @include overlay (black,0.4)
+            }
+        }
+    }
+}
+/*end lorem*/

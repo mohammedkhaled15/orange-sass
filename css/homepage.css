@@ -380,4 +380,40 @@ header .navbar li a:hover {
 }
 
 /*end ourplayers*/
+/*start lorem*/
+.lorem {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.lorem .content {
+  padding-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.lorem .content .image {
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lorem .content .image img {
+  max-width: 100%;
+}
+
+.lorem .content .image:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*end lorem*/
 /*# sourceMappingURL=homepage.css.map */
