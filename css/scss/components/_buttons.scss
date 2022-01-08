@@ -1,3 +1,14 @@
-button{
-    background-color: $buttonColor;
-}
+.button {
+    border: none;
+    background-color: rgba($redColor,0.8);
+    padding: 5px 10px;
+    @include prefixer(border-radius, 5px);
+    cursor: pointer;
+    color: #ddd;
+    font-size: 20px;
+    @include prefixer (transition, 0.8s, webkit moz o);
+    @include prefixer (box-shadow, 5px 5px 8px #666, webkit moz o);
+    &:hover{
+        background-color: $redColor;
+    }
+    }

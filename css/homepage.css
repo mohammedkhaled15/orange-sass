@@ -77,6 +77,25 @@
   z-index: -1;
 }
 
+.button {
+  border: none;
+  background-color: rgba(226, 73, 76, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ddd;
+  font-size: 20px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-box-shadow: 5px 5px 8px #666;
+  -o-box-shadow: 5px 5px 8px #666;
+  box-shadow: 5px 5px 8px #666;
+}
+
+.button:hover {
+  background-color: #e2494c;
+}
+
 header {
   border-bottom: 1px solid #9c9c9c;
   padding-top: 20px;
@@ -127,9 +146,10 @@ header .content .menu-btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   width: 40px;
   display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 575px) {
@@ -142,8 +162,8 @@ header .content .menu-btn {
 
 header .content .menu-btn span {
   width: 100%;
-  background-color: #666;
-  height: 2px;
+  background-color: #e2494c;
+  height: 3px;
   margin-bottom: 2px;
 }
 
@@ -566,16 +586,6 @@ footer .content .contact textarea {
   padding: 15px 10px;
   font-size: 18px;
   height: 180px;
-}
-
-footer .content .contact button {
-  border: none;
-  background-color: #e2494c;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #ddd;
-  font-size: 20px;
 }
 
 footer .content .copyright {
